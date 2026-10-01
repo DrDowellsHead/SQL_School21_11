@@ -35,3 +35,15 @@ SELECT SUM(rating) AS total_rating
 FROM pizzeria;
 
 COMMIT;
+
+-- Шаг 4 - Session #1
+-- После завершения транзакции проверяем итоговую сумму рейтингов.
+
+SELECT SUM(rating) AS total_rating
+FROM pizzeria;
+
+-- Шаг 5 - Session #2
+-- Второй сеанс получает ту же итоговую сумму.
+
+SELECT SUM(rating) AS total_rating
+FROM pizzeria;

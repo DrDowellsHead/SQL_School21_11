@@ -37,3 +37,10 @@ COMMIT;
 SELECT *
 FROM pizzeria
 WHERE name = 'Pizza Hut';
+
+-- Шаг 5 - Session #2
+-- Второй сеанс также проверяет итоговый рейтинг.
+
+SELECT *
+FROM pizzeria
+WHERE name = 'Pizza Hut';

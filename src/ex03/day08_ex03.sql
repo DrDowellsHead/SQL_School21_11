@@ -29,3 +29,17 @@ FROM pizzeria
 WHERE name = 'Pizza Hut';
 
 COMMIT;
+
+-- Шаг 4 - Session #1
+-- После завершения обеих транзакций проверяем итоговый рейтинг.
+
+SELECT *
+FROM pizzeria
+WHERE name = 'Pizza Hut';
+
+-- Шаг 5 - Session #2
+-- Второй сеанс видит то же итоговое значение.
+
+SELECT *
+FROM pizzeria
+WHERE name = 'Pizza Hut';

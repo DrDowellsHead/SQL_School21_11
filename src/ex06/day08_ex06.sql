@@ -41,3 +41,9 @@ COMMIT;
 
 SELECT SUM(rating) AS total_rating
 FROM pizzeria;
+
+-- Шаг 5 - Session #2
+-- Второй сеанс также проверяет обновлённую итоговую сумму.
+
+SELECT SUM(rating) AS total_rating
+FROM pizzeria;
